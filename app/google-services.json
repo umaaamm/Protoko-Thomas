@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "160242045947",
+    "firebase_url": "https://protoko-a7c85.firebaseio.com",
+    "project_id": "protoko-a7c85",
+    "storage_bucket": "protoko-a7c85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160242045947:android:18339d705d88f634",
+        "android_client_info": {
+          "package_name": "protoko.com.protoko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160242045947-qtg27i5r38roojp49psjdfenl42ejlh6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8d0scCvOQ-LwmlluUndS8Bxw6xJWuilA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

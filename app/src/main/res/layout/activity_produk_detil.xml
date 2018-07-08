@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relProduk"
+            android:background="#fff">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <LinearLayout
+                android:id="@+id/SliderDots"
+                android:layout_below="@+id/viewPager"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:layout_marginTop="-30dp" />
+
+            <TextView
+                android:id="@+id/tvNamaProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SliderDots"
+                android:text="Komputer\nKomp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorHitam"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:text="JSon Image Nama"
+                android:id="@+id/tvHargaProduk"
+                android:layout_below="@+id/tvNamaProduk"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"/>
+            <LinearLayout
+                android:id="@+id/llImgBonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/tvNamaProduk"
+                android:gravity="center"
+                android:layout_marginBottom="-20dp"
+                android:layout_marginEnd="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="105dp"
+                    android:layout_height="120dp"
+                    android:background="#fff"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="#fff">
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="100dp"
+                            android:layout_height="110dp"
+                            card_view:cardCornerRadius="5dp"
+                            card_view:cardElevation="5dp"
+                            card_view:cardBackgroundColor="#fff"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            card_view:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center">
+
+                                <ImageView
+                                    android:padding="5dp"
+                                    android:id="@+id/imgPromo4"
+                                    android:background="#fff"
+                                    android:layout_width="95dp"
+                                    android:layout_height="105dp"
+                                    android:src="@drawable/ic_add_img2"
+                                    android:scaleType="center"
+                                    android:layout_alignParentTop="true"
+                                    android:onClick="bonusFul"/>
+
+                                <ImageView
+                                    android:padding="5dp"
+                                    android:id="@+id/imgPromo4_load"
+                                    android:background="#fff"
+                                    android:layout_width="95dp"
+                                    android:layout_height="105dp"
+                                    android:src="@drawable/ic_load_img"
+                                    android:scaleType="center"
+                                    android:layout_alignParentTop="true"/>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gratis"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            android:layout_marginTop="-7dp"
+                            android:textColor="@color/colorHitam"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_above="@+id/batas1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Promo berakhir"
+                    android:textColor="#858585"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvPromoBerakhir2"
+                    android:text="10 Hari lagi"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#858585"
+                android:text="JSon Image Name"
+                android:id="@+id/tvHargaLama"
+                android:layout_below="@+id/tvHargaProduk"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:text="JSon Image Name"
+                android:id="@+id/tvHargaBaru"
+                android:layout_marginStart="15dp"
+                android:layout_below="@+id/tvHargaLama"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text=" Diskon \n"
+                android:textAlignment="center"
+                android:id="@+id/tvDiskon"
+                android:background="@drawable/diskon"
+                android:layout_marginStart="150dp"
+                android:layout_above="@+id/batas1"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#ecf1f4"
+                android:id="@+id/batas1"
+                android:gravity="center"
+                android:layout_below="@+id/tvHargaBaru"
+                android:orientation="horizontal"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#ecf1f4"
+                android:id="@+id/llad"
+                android:gravity="center"
+                android:layout_below="@+id/tvHargaBaru"
+                android:orientation="horizontal"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llad"
+                android:id="@+id/cvInfoPromo"
+                android:elevation="5dp"
+                android:background="#fff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorHitam"
+                        android:text="Informasi Promo"
+                        android:textStyle="bold"
+                        android:id="@+id/tvInfoPromo"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#858585"
+                        android:text="Promo Berlaku"
+                        android:id="@+id/tvDurasi"
+                        android:layout_below="@+id/tvInfoPromo"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorHitam"
+                        android:text=""
+                        android:id="@+id/tvDurasiPromo"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/tvInfoPromo"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="5dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ecf1f4"
+                        android:id="@+id/garis1"
+                        android:layout_below="@+id/tvDurasi"
+                        android:orientation="horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#858585"
+                        android:text="Kategori"
+                        android:id="@+id/tvKategori"
+                        android:layout_below="@+id/garis1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:id="@+id/tvKategoriPromo"
+                        android:onClick="klikKategori"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/garis1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="5dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ecf1f4"
+                        android:id="@+id/garis2"
+                        android:layout_below="@+id/tvKategori"
+                        android:orientation="horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#858585"
+                        android:text="Jenis Promo"
+                        android:id="@+id/tvJenis"
+                        android:layout_below="@+id/garis2"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:onClick="klikJenis"
+                        android:id="@+id/tvJenisPromo"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/garis2"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="5dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ecf1f4"
+                        android:id="@+id/garis3_2"
+                        android:layout_below="@+id/tvJenis"
+                        android:orientation="horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#858585"
+                        android:text="Terakhir Diperbarui"
+                        android:layout_below="@+id/garis3_2"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorHitam"
+                        android:text=""
+                        android:id="@+id/tvUpdatePromo"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/garis3_2"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="5dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#ecf1f4"
+                android:id="@+id/batas2"
+                android:layout_below="@+id/cvInfoPromo"
+                android:orientation="horizontal" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cvDeskripsi"
+                android:background="#fff"
+                android:elevation="5dp"
+                android:layout_below="@+id/batas2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorHitam"
+                        android:text="Deskripsi Promo"
+                        android:textStyle="bold"
+                        android:id="@+id/tvDeskripsi"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:id="@+id/tvDeskripsiProduk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvDeskripsi"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:maxLines="15"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#858585"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#ecf1f4"
+                android:id="@+id/batas3"
+                android:layout_below="@+id/cvDeskripsi"
+                android:orientation="horizontal" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cvInfoToko"
+                android:background="#fff"
+                android:elevation="5dp"
+                android:layout_below="@+id/batas3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorHitam"
+                        android:text="Informasi Toko"
+                        android:textStyle="bold"
+                        android:id="@+id/tvInfoToko"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#858585"
+                        android:text="Nama Toko"
+                        android:id="@+id/tvNamaToko"
+                        android:layout_below="@+id/tvInfoToko"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text=""
+                        android:id="@+id/tvNamaTokoPromo"
+                        android:textStyle="bold"
+                        android:onClick="klikNamaToko"
+                        android:layout_below="@+id/tvNamaToko"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="2dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ecf1f4"
+                        android:id="@+id/garis3"
+                        android:layout_below="@+id/tvNamaTokoPromo"
+                        android:orientation="horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#858585"
+                        android:text="Alamat Toko"
+                        android:id="@+id/tvAlamatToko"
+                        android:layout_below="@+id/garis3"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorHitam"
+                        android:text=""
+                        android:maxLines="3"
+                        android:id="@+id/tvAlamatTokoPromo"
+                        android:layout_below="@+id/tvAlamatToko"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="2dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ecf1f4"
+                        android:id="@+id/garis4"
+                        android:layout_below="@+id/tvAlamatTokoPromo"
+                        android:orientation="horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#858585"
+                        android:text="Kecamatan"
+                        android:id="@+id/tvKecamatanToko"
+                        android:layout_below="@+id/garis4"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text=""
+                        android:id="@+id/tvKecamatanTokoPromo"
+                        android:textStyle="bold"
+                        android:onClick="klikKecamatan"
+                        android:layout_below="@+id/tvKecamatanToko"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="2dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#ecf1f4"
+                        android:id="@+id/garis5"
+                        android:layout_below="@+id/tvKecamatanTokoPromo"
+                        android:orientation="horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#858585"
+                        android:text="Nomor Telepon"
+                        android:id="@+id/tvTeleponToko"
+                        android:layout_below="@+id/garis5"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorHitam"
+                        android:text=""
+                        android:id="@+id/tvTeleponTokoPromo"
+                        android:layout_below="@+id/tvTeleponToko"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#ecf1f4"
+                android:id="@+id/batas6"
+                android:layout_below="@+id/cvInfoToko"
+                android:orientation="horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#fff"
+                android:layout_below="@+id/batas6"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    <include layout="@layout/gradient_header" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarbagus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/Toolbar" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|center"
+        android:elevation="6dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        app:fabSize="normal"
+        android:onClick="telp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_telp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom|center"
+        android:elevation="6dp"
+        android:layout_marginEnd="40dp"
+        app:fabSize="normal"
+        android:onClick="peta"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_lokasi"/>
+
+
+</FrameLayout>

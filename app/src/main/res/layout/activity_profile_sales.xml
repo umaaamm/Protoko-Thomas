@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="protoko.com.protoko.UploadActivity"
+    android:background="@color/colorAbu"
+    android:id="@+id/svToko">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Profil Sales"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingTop="15dp"
+        android:paddingStart="15dp"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Sales"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:paddingTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etNamaSales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:background="@drawable/garis"
+            android:paddingBottom="4dp"
+            android:paddingTop="6dp"
+            android:paddingStart="4dp"
+            android:lines="1"
+            android:inputType="textVisiblePassword"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Sales"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:paddingTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etIdSales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:background="@drawable/garis"
+            android:paddingBottom="4dp"
+            android:paddingTop="6dp"
+            android:paddingStart="4dp"
+            android:lines="1"
+            android:inputType="textVisiblePassword"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Perusahaan"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:paddingTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etNamaPerusahaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:background="@drawable/garis"
+            android:paddingBottom="4dp"
+            android:paddingTop="6dp"
+            android:paddingStart="4dp"
+            android:lines="1"
+            android:inputType="textVisiblePassword"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telepon"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:paddingTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etTelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:background="@drawable/garis"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:paddingStart="4dp"
+            android:lines="1"
+            android:inputType="number"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:paddingBottom="30dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/Ubah"
+            android:text="Ubah"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:onClick="ubah"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/Simpan"
+            android:text="Simpan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:onClick="simpan"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

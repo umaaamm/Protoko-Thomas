@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">ProToko</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_masuk">Masuk</string>
+    <string name="nav_item_daftar_toko">Daftar Toko</string>
+    <string name="nav_item_toko">Toko Terdekat</string>
+    <string name="nav_item_pasang">Pasang Promo</string>
+    <string name="nav_item_katalog">Katalog Promoku</string>
+    <string name="nav_item_akun">Akun Saya</string>
+    <string name="nav_item_bantuan">Pusat Bantuan</string>
+    <string name="nav_item_tentang">Tentang Aplikasi</string>
+    <string name="nav_item_keluar">Keluar</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_masuk</item>
+        <item>@string/nav_item_toko</item>
+        <item>@string/nav_item_daftar_toko</item>
+        <item>@string/nav_item_bantuan</item>
+        <item>@string/nav_item_tentang</item>
+    </string-array>
+
+    <string-array name="nav_drawer_labels_login">
+        <item>@string/nav_item_pasang</item>
+        <item>@string/nav_item_katalog</item>
+        <item>@string/nav_item_akun</item>
+        <item>@string/nav_item_bantuan</item>
+        <item>@string/nav_item_tentang</item>
+        <item>@string/nav_item_keluar</item>
+    </string-array>
+
+    <string-array name="nav_drawer_sales">
+        <item>@string/nav_item_daftar_toko</item>
+        <item>@string/nav_item_akun</item>
+        <item>@string/nav_item_bantuan</item>
+        <item>@string/nav_item_tentang</item>
+        <item>@string/nav_item_keluar</item>
+    </string-array>
+
+    <array name="nav_drawer_icons_login">
+        <item>@drawable/sc_pasang</item>
+        <item>@drawable/sc_katalog</item>
+        <item>@drawable/sc_akun</item>
+        <item>@drawable/sc_bantuan</item>
+        <item>@drawable/sc_tentang</item>
+        <item>@drawable/sc_keluar</item>
+    </array>
+
+    <array name="nav_drawer_icons_sales">
+        <item>@drawable/sc_list_toko</item>
+        <item>@drawable/sc_akun</item>
+        <item>@drawable/sc_bantuan</item>
+        <item>@drawable/sc_tentang</item>
+        <item>@drawable/sc_keluar</item>
+    </array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/sc_login</item>
+        <item>@drawable/sc_toko</item>
+        <item>@drawable/sc_list_toko</item>
+        <item>@drawable/sc_bantuan</item>
+        <item>@drawable/sc_tentang</item>
+    </array>
+
+    <string-array name="kategori">
+        <item>Aneka Jenis Makanan</item>
+        <item>Aneka Jenis Minuman</item>
+        <item>Oleh-Oleh dan Cinderamata</item>
+        <item>Produk Rumah Tangga</item>
+        <item>Perlengkapan Anak</item>
+        <item>Alat Tulis Kantor</item>
+        <item>Perawatan Tubuh</item>
+        <item>Pakaian dan Aksesoris</item>
+        <item>Dapur dan Sembako</item>
+        <item>Peralatan Olahraga</item>
+        <item>Jenis Produk Lainnya</item>
+    </string-array>
+
+    <string-array name="urut">
+        <item>Promo Terbaru</item>
+        <item>Promo Terlama</item>
+        <item>Jarak Terdekat</item>
+        <item>Harga (Rendah ke Tinggi)</item>
+        <item>Harga (Tinggi ke Rendah)</item>
+    </string-array>
+
+    <string name="admob_app_id">ca-app-pub-7213908677545022~8326529501</string>
+    <string name="ad_unit_id">ca-app-pub-7213908677545022/4387284492</string>
+    <string name="test_id">D0111481C68D76F5EAF7D8EEE4B751FA</string>
+
+</resources>
